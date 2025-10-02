@@ -1,9 +1,16 @@
+import ButtonGradient from "./assets/svg/ButtonGradient"
+import Header from "./components/Header"
+
 function App() {
   return (
     <>
-      <h1 className='font-mono font-bold underline text-blue-400 dark:text-sky-400 text-3xl'>Hello, FP!</h1>
+      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+        <Header />
+      </div>
+
+      <ButtonGradient />
     </>
-  )
+  );
 }
 
 export default App
