@@ -31,12 +31,12 @@ const ButtonSvg = (white) => (
           <polygon
             fill="url(#btn-top)" // mentioned in ButtonGradient.jsx
             fillRule="nonzero"
-            points="100 42 100 44 0 44 0 42"
+            points="88 42 88 44 0 44 0 42"
           />
           <polygon
             fill="url(#btn-bottom)" // mentioned in ButtonGradient.jsx
             fillRule="nonzero"
-            points="100 0 100 2 0 2 0 0"
+            points="88 0 88 2 0 2 0 0"
           />
         </>
       )}
