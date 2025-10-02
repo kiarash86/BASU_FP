@@ -1,71 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --font-sora: "Sora", sans-serif;
+  --font-code: "Source Code Pro", monospace;
+  --font-grotesk: "Space Grotesk", sans-serif;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color-scheme: dark;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  scroll-behavior: smooth;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@layer base {
+  body {
+    @apply font-sans bg-n-8 text-n-1 text-base antialiased;
   }
+
+  a {
+    @apply font-medium text-color-5 no-underline transition-colors duration-200;
+  }
+
   a:hover {
-    color: #747bff;
+    @apply text-color-1;
   }
+
+  h1 {
+    @apply text-h1 font-semibold;
+  }
+
+  h2 {
+    @apply text-h2 font-semibold;
+  }
+
   button {
-    background-color: #f9f9f9;
+    @apply rounded-lg border border-transparent px-5 py-2 font-medium text-base bg-n-7 cursor-pointer transition-colors duration-200;
+  }
+
+  button:hover {
+    @apply border-color-5;
+  }
+
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
   }
 }
+
+.rotate-45   { transform: rotate(45deg); }
+.rotate-90   { transform: rotate(90deg); }
+.rotate-135  { transform: rotate(135deg); }
+.rotate-180  { transform: rotate(180deg); }
+.rotate-225  { transform: rotate(225deg); }
+.rotate-270  { transform: rotate(270deg); }
+.rotate-315  { transform: rotate(315deg); }
+.rotate-360  { transform: rotate(360deg); }
+
+.-rotate-45  { transform: rotate(-45deg); }
+.-rotate-90  { transform: rotate(-90deg); }
+.-rotate-135 { transform: rotate(-135deg); }
+.-rotate-180 { transform: rotate(-180deg); }
+.-rotate-225 { transform: rotate(-225deg); }
+.-rotate-270 { transform: rotate(-270deg); }
+.-rotate-315 { transform: rotate(-315deg); }
+.-rotate-360 { transform: rotate(-360deg); }
