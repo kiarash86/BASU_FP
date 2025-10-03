@@ -1,4 +1,5 @@
 import brainwave from "./brainwave.svg";
+import laptop from "./laptop.svg";
 import check from "./check.svg";
 import brainwaveSymbol from "./brainwave-symbol.svg";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
@@ -23,6 +24,7 @@ import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
+import code from "./hero/code.jpg";
 import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
@@ -77,6 +79,7 @@ import twitter from "./socials/twitter.svg";
 
 export {
   brainwave,
+  laptop,
   check,
   check2,
   loading1,
@@ -94,6 +97,7 @@ export {
   recording03,
   recording01,
   disc02,
+  code,
   chromecast,
   sliders04,
   loading,
