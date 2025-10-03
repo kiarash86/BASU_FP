@@ -12,6 +12,8 @@ import loading1 from "./loading-01.svg";
 import yourlogo from "./yourlogo.svg";
 import homeSmile from "./home-smile.svg";
 import file02 from "./file-02.svg";
+import hacker from "./hacker.svg";
+import shell from "./terminal.svg";
 import searchMd from "./search-md.svg";
 import plusSquare from "./plus-square.svg";
 import recording03 from "./recording-03.svg";
@@ -93,6 +95,8 @@ export {
   yourlogo,
   homeSmile,
   file02,
+  hacker,
+  shell,
   searchMd,
   plusSquare,
   recording03,

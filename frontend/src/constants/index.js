@@ -11,6 +11,7 @@ import {
     facebook,
     figma,
     file02,
+    hacker,
     framer,
     homeSmile,
     instagram,
@@ -71,7 +72,7 @@ import {
     },
   ];
   
-  export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
+  export const heroIcons = [hacker, file02, searchMd, plusSquare];
   
   export const notificationImages = [notification4, notification3, notification2];
   
