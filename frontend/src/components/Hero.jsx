@@ -7,11 +7,11 @@ import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
 
 const Hero = () => {
-    // const parallaxRef = useRef(null);
+    const parallaxRef = useRef(null);
 
     return (
         <Section className="pt-[12rem] -mt-[5.25rem]" crossess crossessOffset="lg:translate-y-[5.25rem]" customPaddings id="hero">
-            <div className="container relative">
+            <div className="container relative" ref={parallaxRef}>
                 <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb:[6.25rem]">
                     <h1 className="h1 mb-6">
                         Your first step into the world of
@@ -32,9 +32,13 @@ const Hero = () => {
                         <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
                         <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
                             <img src={code} className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]" width={1024} height={490} alt="Main picture" />
+
                         </div>
                         </div>
                     </div>
+                    <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
+                    <img src={heroBackground} className="w-full" width={1440} height={1800} alt="heroBG"/>
+                </div>
                 </div> 
         </Section>        
     );
