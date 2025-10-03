@@ -25,6 +25,7 @@ import background from "./background.jpg";
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
 import code from "./hero/code.jpg";
+import codeMobile from "./hero/code_mobile.jpg";
 import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
@@ -98,6 +99,7 @@ export {
   recording01,
   disc02,
   code,
+  codeMobile,
   chromecast,
   sliders04,
   loading,
