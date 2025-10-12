@@ -1,4 +1,4 @@
-import { curve, heroBackground, code, codeMobile } from "../assets";
+import { curve, heroBackground, code, codeMobile, moonBackground } from "../assets";
 import Button from "./Button";
 import Section from "./Section";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
@@ -34,7 +34,7 @@ const Hero = () => {
                             <img src={code} className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]" width={1024} height={490} alt="Main picture" />
 
                             <ScrollParallax isAbsolutelyPositioned>
-                                <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
+                                <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex ">
                                     {heroIcons.map((icon, index) => (
                                     <li className="p-5" key={index}>
                                         <img src={icon} width={24} height={25} alt={icon} />
@@ -42,7 +42,6 @@ const Hero = () => {
                                     ))}
                                 </ul>
                             </ScrollParallax>
-
 
                             <ScrollParallax isAbsolutelyPositioned>
                                     <p className="hidden absolute -right-[5.5rem] bottom-[15rem] w-[18rem] px-2 py-3 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">Build strong fundamentals, unlock endless possibilities</p>
@@ -52,12 +51,11 @@ const Hero = () => {
                         <Gradient />
                     </div>
                     <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
-                    <img src={heroBackground} className="w-full" width={1440} height={1800} alt="heroBG"/>
+                    <img src={moonBackground} className="w-full" width={1440} height={1800} alt="heroBG"/>
                 
                 </div>
                     <BackgroundCircles />
             </div> 
-            
             <BottomLine />
         </Section>        
     );

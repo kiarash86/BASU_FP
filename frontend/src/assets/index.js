@@ -13,7 +13,12 @@ import yourlogo from "./yourlogo.svg";
 import homeSmile from "./home-smile.svg";
 import file02 from "./file-02.svg";
 import hacker from "./hacker.svg";
-import shell from "./terminal.svg";
+import shell from "./shell.svg";
+import git from "./git.svg";
+import bug from "./bug.svg";
+import memory from "./memory.svg";
+import linux from "./linux.svg";
+import network from "./network.svg";
 import searchMd from "./search-md.svg";
 import plusSquare from "./plus-square.svg";
 import recording03 from "./recording-03.svg";
@@ -23,6 +28,8 @@ import chromecast from "./chrome-cast.svg";
 import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
 import background from "./background.jpg";
+import moonBackground from "./moon_new.png"
+import chat from "./chat.png"
 
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
@@ -97,6 +104,11 @@ export {
   file02,
   hacker,
   shell,
+  git,
+  bug,
+  memory,
+  linux,
+  network,
   searchMd,
   plusSquare,
   recording03,
@@ -108,6 +120,7 @@ export {
   sliders04,
   loading,
   background,
+  moonBackground,
   curve,
   robot,
   heroBackground,
@@ -129,6 +142,7 @@ export {
   coins,
   done,
   hero,
+  chat,
   roadmap1,
   roadmap2,
   roadmap3,

@@ -12,6 +12,12 @@ import {
     figma,
     file02,
     hacker,
+    shell,
+    git,
+    bug,
+    linux,
+    network,
+    memory,
     framer,
     homeSmile,
     instagram,
@@ -72,7 +78,7 @@ import {
     },
   ];
   
-  export const heroIcons = [hacker, file02, searchMd, plusSquare];
+  export const heroIcons = [hacker, bug, git, shell];
   
   export const notificationImages = [notification4, notification3, notification2];
   

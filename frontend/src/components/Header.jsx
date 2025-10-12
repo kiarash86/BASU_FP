@@ -55,7 +55,7 @@ const Header = () => {
                 <a href="#signup" className='button hidden mr-8 transition-colors text-n-3 lg:block'>Course Ware</a>
             
                 <Button className="hidden lg:flex" href="#login">
-                    Sign-in
+                    Quera
                 </Button>
 
                 <Button className={`ml-auto lg:hidden`} px="px-3" onClick={toggleNavigation}>
