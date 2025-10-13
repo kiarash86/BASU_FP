@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import Hero from "./components/Hero" 
 import Benefits from "./components/Benefits";
 import CourseTimeline from "./components/CourseTimeline" 
+import RoadmapEmbed from "./components/Roadmap"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Hero />
         <Benefits />
         <CourseTimeline />
+        <RoadmapEmbed />
       </div>
 
       <ButtonGradient />
