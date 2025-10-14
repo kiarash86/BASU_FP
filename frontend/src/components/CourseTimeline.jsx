@@ -11,7 +11,7 @@ function CourseTimeline() {
   };
 
   return (
-    <Section id="timeline">
+    <Section id="timeline" crossess crossessOffset="lg:translate-y-[5.25rem]" customPadding="py-20">
       <h2 className="h2 text-center mb-12">Timeline</h2>
 
       <VerticalTimeline>
