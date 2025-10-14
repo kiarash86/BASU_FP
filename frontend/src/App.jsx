@@ -4,6 +4,7 @@ import Hero from "./components/Hero"
 import Benefits from "./components/Benefits";
 import CourseTimeline from "./components/CourseTimeline" 
 import RoadmapEmbed from "./components/Roadmap"
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
         <Benefits />
         <CourseTimeline />
         <RoadmapEmbed />
+        <Footer />
       </div>
-
+    
       <ButtonGradient />
     </>
   );
