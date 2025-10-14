@@ -66,14 +66,14 @@ import {
     },
     {
       id: "4",
-      title: "New account",
-      url: "#signup",
+      title: "Quera",
+      url: "#Quera",
       onlyMobile: true,
     },
     {
       id: "5",
-      title: "Sign in",
-      url: "#login",
+      title: "Course Ware",
+      url: "#cw",
       onlyMobile: true,
     },
   ];

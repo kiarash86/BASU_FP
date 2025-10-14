@@ -52,7 +52,7 @@ const Header = () => {
                     <HamburgerMenu />
                 </nav>
 
-                <a href="#signup" className='button hidden mr-8 transition-colors text-n-3 lg:block'>Course Ware</a>
+                <a href="#" className='button hidden mr-8 transition-colors text-n-3 lg:block'>Course Ware</a>
             
                 <Button className="hidden lg:flex" href="#login">
                     Quera
