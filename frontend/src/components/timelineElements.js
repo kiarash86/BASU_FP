@@ -46,7 +46,7 @@ import {
 const timelineElements = [
   {
     id: 1,
-    title: "Flowcharts & Algorithms",
+    title: "Problem solving & Algorithms",
     location: "Bu-Ali Sina University",
     description:
       "Learn how to design flowcharts and understand fundamental algorithms for problem solving.",

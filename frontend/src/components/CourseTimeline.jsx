@@ -1,6 +1,5 @@
 import Section from "./Section";
 import timelineElements from "./timelineElements";
-import { BottomLine } from "./design/Hero";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
@@ -14,7 +13,6 @@ function CourseTimeline() {
   return (
     <Section id="timeline">
       <h2 className="h2 text-center mb-12">Timeline</h2>
-      <BottomLine />
 
       <VerticalTimeline>
         {timelineElements.map((element) => {
