@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import { disablePageScroll, enablePageScrol } from 'scroll-lock';
+import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 import { useState } from 'react';
 
 import { brainwaveSymbol, laptop } from "../assets/";
@@ -15,7 +15,7 @@ const Header = () => {
     const toggleNavigation = () => {
         if (openNavigation) {
             setOpenNavigation(false);
-            enablePageScrol();
+            enablePageScroll();
         } else {
             setOpenNavigation(true);
             disablePageScroll();
@@ -26,7 +26,7 @@ const Header = () => {
     const handleClick = () => {
         if (!openNavigation) return;
 
-        enablePageScrol();
+        enablePageScroll();
         setOpenNavigation(false);
     }
 
