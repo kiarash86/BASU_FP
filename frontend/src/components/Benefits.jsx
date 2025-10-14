@@ -1,6 +1,7 @@
 import { benefits } from "../constants";
 import Heading from "./Heading";
 import Section from "./Section";
+import { BottomLine } from "./design/Hero";
 import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
