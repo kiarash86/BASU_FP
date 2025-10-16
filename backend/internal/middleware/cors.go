@@ -1,0 +1,18 @@
+package middleware
+
+import (
+	"net/http"
+
+	"github.com/go-chi/cors"
+)
+
+func CORS() func(http.Handler) http.Handler {
+		return cors.Handler(cors.Options{
+			AllowedOrigins:   []string{"*"}, // TODO: restrict in stable state
+			AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+			AllowedHeaders:   []string{"Authorization", "Content-Type"},
+			AllowCredentials: false,
+			MaxAge:           300,
+		})
+	}
+}
