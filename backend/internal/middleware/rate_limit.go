@@ -1,13 +1,34 @@
 package middleware
 
 import (
+	"expvar"
 	"net/http"
 	"sync"
+	"time"
 
+	"github.com/hashicorp/golang-lru/v2"
 	"golang.org/x/time/rate"
 )
 
-var visitors = make(map[string]*rate.Limiter)
+type RateLimitConfig struct {
+	Rate            rate.Limit
+	Burst           int
+	TTL             time.Duration // Time after which inactive IPs are removed
+	MaxEntries      int
+	CleanUpInterval time.Duration
+}
+
+type RateLimiter struct {
+	visitors *lru.Cache[string, *visitor]
+	mu       sync.Mutex
+	config   RateLimitConfig
+}
+
+type visitor struct {
+	limiter  rate.Limiter
+	lastSeen time.Time
+}
+
 var mu sync.Mutex
 
 func getVisitor(ip string) *rate.Limiter {

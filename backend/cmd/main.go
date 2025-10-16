@@ -14,6 +14,8 @@ func main() {
 
 	srv := server.New()
 	srv.Router.Use(middleware.Logger)
+	srv.Router.Use(middleware.CORS())
+	srv.Router.Use(middleware.RateLimit)
 	srv.Router.Get("/api/health", handlers.HealthHandler)
 
 	log.Printf("Server running on %s:%d", cfg.Server.Host, cfg.Server.Port)
