@@ -118,7 +118,7 @@ const timelineElements = [
       "Apply all learned concepts to develop a complete programming project.",
     buttonText: "Project Details",
     date: "Week 10 - 12",
-    iconSrc: "",
+    iconSrc: file02,
     icon: "project",
   },
   {
@@ -140,7 +140,7 @@ const timelineElements = [
       "Hands-on GUI programming using FTXUI library for terminal-based interfaces.",
     buttonText: "Workshop Guide",
     date: "Week 14",
-    iconSrc: "",
+    iconSrc: file02,
     icon: "school",
   },
 ];

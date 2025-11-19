@@ -1,3 +1,4 @@
+import React from 'react';
 import ButtonSvg from '../assets/svg/ButtonSvg'
 
 const Button = ({ className, href, onClick, children, px, white }) => {
@@ -23,5 +24,4 @@ const Button = ({ className, href, onClick, children, px, white }) => {
 
     return href ? renderLink() : renderButton();
 };
-
-export default Button;
+export default React.memo(Button);

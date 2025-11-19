@@ -1,3 +1,4 @@
+import React from 'react';
 import TagLine from "./Tagline";
 
 const Heading = ({ className, title, text, tag }) => {
@@ -12,4 +13,4 @@ const Heading = ({ className, title, text, tag }) => {
   );
 };
 
-export default Heading;
+export default React.memo(Heading);
