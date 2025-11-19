@@ -6,7 +6,7 @@ import TimelineItem from "./TimelineItem";
 
 function CourseTimeline() {
   return (
-    <Section id="timeline"  crossOffset="lg:translate-y-[5.25rem]" customPadding="py-20">
+    <Section id="timeline"  crossesOffset="lg:translate-y-[5.25rem]" customPadding="py-20">
       <h2 className="h2 text-center mb-12">Timeline</h2>
 
       <VerticalTimeline>
