@@ -1,45 +1,44 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from "react";
 
-/**
- * * @param {string[]} sectionUrls 
- * @returns {string} 
- */
-const useScrollSpy = (sectionUrls) => {
-  const [activeId, setActiveId] = useState('');
+const useScrollSpy = (sectionUrls = [], offset = 80) => {
+  const [activeId, setActiveId] = useState("");
 
   useEffect(() => {
-    const targetIds = sectionUrls.map(url => url.substring(1));
-    
-    const targets = targetIds
-        .map(id => document.getElementById(id))
-        .filter(el => el !== null); 
-    if (targets.length === 0) return;
+    const targetIds = sectionUrls
+      .filter(Boolean)
+      .map((url) => url.replace("#", ""));
+
+    const sections = targetIds
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
+
+    if (sections.length === 0) return;
 
     const observerOptions = {
-      rootMargin: '-50% 0px -50% 0px', 
-      threshold: 0,
+      root: null,
+      rootMargin: `-${offset}px 0px -50% 0px`,
+      threshold: 0.1,
     };
 
-    const observerCallback = (entries) => {
-      const visibleEntry = entries.find(entry => entry.isIntersecting);
-      
-      if (visibleEntry) {
-        setActiveId(`#${visibleEntry.target.id}`);
+    const observer = new IntersectionObserver((entries) => {
+      if (window.scrollY < offset) {
+        setActiveId("");
+        return;
       }
-    };
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveId(`#${entry.target.id}`);
+        }
+      });
+    }, observerOptions);
 
-    targets.forEach(target => {
-      observer.observe(target);
-    });
+    sections.forEach((section) => observer.observe(section));
 
     return () => {
-      targets.forEach(target => {
-        observer.unobserve(target);
-      });
+      sections.forEach((section) => observer.unobserve(section));
     };
-  }, [sectionUrls]); 
+  }, [sectionUrls, offset]);
 
   return activeId;
 };
