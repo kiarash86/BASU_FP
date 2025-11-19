@@ -34,30 +34,33 @@ const Header = () => {
           } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:mx-auto lg:flex lg:bg-transparent`}
         >
           <div className="relative z-2 m-auto flex flex-col items-center justify-center lg:flex-row">
-            {navigation.map((item) => {
-              const isDesktopHidden = item.onlyMobile ? "lg:hidden" : "";
+       {navigation.map((item) => {
+  const isDesktopHidden = item.onlyMobile ? "lg:hidden" : "";
 
-              const isActive =
-                activeSection !== "" &&
-                item.url &&
-                item.url === activeSection;
+  const itemId = (item.url || "").replace("#", "");
 
-              const baseClasses =
-                "block relative px-6 py-6 font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold lg:leading-5 lg:hover:text-n-1 xl:px-12";
+  const activeId = (activeSection || "").replace("#", "");
+  
+  const isActive = activeId !== "" && itemId !== "" && itemId === activeId;
 
-              const activeClasses = isActive ? "z-2 lg:text-n-1" : "lg:text-n-4";
+  const baseClasses =
+    "block relative px-6 py-6 font-code text-2xl uppercase text-n-4 transition-colors hover:text-color-1 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold lg:leading-5 lg:hover:text-n-1 xl:px-12";
 
-              return (
-                <a
-                  key={item.id}
-                  href={item.url}
-                  onClick={handleClick}
-                  className={`${baseClasses} ${activeClasses} ${isDesktopHidden}`}
-                >
-                  {item.title}
-                </a>
-              );
-            })}
+  const activeClasses = isActive ? "z-2 lg:text-n-1" : "lg:text-n-4";
+
+  return (
+    <a
+      key={item.id}
+      href={item.url}
+      onClick={handleClick}
+      className={`${baseClasses} ${activeClasses} ${isDesktopHidden}`}
+    >
+      {item.title}
+    </a>
+  );
+})}
+
+
           </div>
 
           <HamburgerMenu />
