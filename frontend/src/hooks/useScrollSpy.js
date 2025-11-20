@@ -20,11 +20,27 @@ const useScrollSpy = (sectionUrls = [], offset = 80) => {
       threshold: 0.1,
     };
 
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
     const observer = new IntersectionObserver((entries) => {
-      if (window.scrollY < offset) {
-        setActiveId("");
+   if (window.scrollY <= offset) {
+        if (activeId !== "") setActiveId("");
         return;
       }
+
+
 
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
