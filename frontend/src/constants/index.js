@@ -1,32 +1,29 @@
+      /*توانایی تمیز شدن دارد*/
+      /*مورد برای بررسی شدن دارد*/
+              /*اشکال دارد*/
+
+
+
+
 import {
     benefitIcon1,
     benefitIcon2,
     benefitIcon3,
-    benefitIcon4,
     benefitImage2,
     chromecast,
     disc02,
     discord,
-    discordBlack,
-    facebook,
     figma,
-    file02,
     hacker,
     shell,
     git,
     bug,
-    linux,
-    network,
-    memory,
     framer,
-    homeSmile,
-    instagram,
     notification2,
     notification3,
     notification4,
     notion,
     photoshop,
-    plusSquare,
     protopie,
     raindrop,
     recording01,
@@ -35,14 +32,17 @@ import {
     roadmap2,
     roadmap3,
     roadmap4,
-    searchMd,
     slack,
     sliders04,
     telegram,
-    twitter,
     yourlogo,
   } from "../assets";
   
+
+
+
+        {/*menu items are here*/}
+
   export const navigation = [
     {
       id: "0",
@@ -56,8 +56,8 @@ import {
     },
     {
       id: "2",
-      title: "Team",
-      url: "#team",
+      title: "Blog ",
+      url: "blog",
     },
     {
       id: "3",
@@ -77,7 +77,15 @@ import {
       onlyMobile: true,
     },
   ];
-  
+          {/*menu items are here*/}
+
+
+
+          
+
+
+        {/*idk*/}
+
   export const heroIcons = [hacker, bug, git, shell];
   
   export const notificationImages = [notification4, notification3, notification2];
@@ -89,7 +97,7 @@ import {
     "Photo enhance",
     "Seamless Integration",
   ];
-  
+
   export const brainwaveServicesIcons = [
     recording03,
     recording01,
@@ -97,7 +105,15 @@ import {
     chromecast,
     sliders04,
   ];
-  
+          {/*idk*/}
+
+
+
+
+
+
+        {/*no use at this moment*/}
+/*
   export const roadmap = [
     {
       id: "0",
@@ -132,8 +148,16 @@ import {
       status: "progress",
       imageUrl: roadmap4,
     },
-  ];
-  
+  ];*/
+        {/*no use at this moment*/}
+
+
+
+
+
+
+        {/*no use at this moment*/}
+/*
   export const collabText =
     "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
   
@@ -151,8 +175,16 @@ import {
       id: "2",
       title: "Top-notch Security",
     },
-  ];
-  
+  ];*/
+        {/*no use at this moment*/}
+
+
+
+
+
+      {/*no use at this moment*/}
+
+  /*
   export const collabApps = [
     {
       id: "0",
@@ -211,125 +243,64 @@ import {
       height: 32,
     },
   ];
-  
-  export const timeline = [
-    {
-      id: "0",
-      title: "Basic",
-      description: "AI chatbot, personalized recommendations",
-      price: "0",
-      features: [
-        "An AI chatbot that can understand your queries",
-        "Personalized recommendations based on your preferences",
-        "Ability to explore the app and its features without any cost",
-      ],
-    },
-    {
-      id: "1",
-      title: "Premium",
-      description: "Advanced AI chatbot, priority support, analytics dashboard",
-      price: "9.99",
-      features: [
-        "An advanced AI chatbot that can understand complex queries",
-        "An analytics dashboard to track your conversations",
-        "Priority support to solve issues quickly",
-      ],
-    },
-    {
-      id: "2",
-      title: "Enterprise",
-      description: "Custom AI chatbot, advanced analytics, dedicated account",
-      price: null,
-      features: [
-        "An AI chatbot that can understand your queries",
-        "Personalized recommendations based on your preferences",
-        "Ability to explore the app and its features without any cost",
-      ],
-    },
-  ];
-  
+  */
+      {/*no use at this moment*/}
+
+
+
+
+      {/*that 3 boxes that have some ... and linked to blog and schedule and TA*/}
+
+
+
+
+              {/*اشکال دارد*/}
+
   export const benefits = [
     {
       id: "0",
-      title: "Ask anything",
-      text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+      title: "FoP Blog",
+      text: "Shares insights, tutorials, and the latest updates to keep you informed and inspired.",
       backgroundUrl: "./src/assets/benefits/card-1.svg",
       iconUrl: benefitIcon1,
       imageUrl: benefitImage2,
+            link:"/blog",
+
+      
     },
     {
       id: "1",
-      title: "Improve everyday",
-      text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+      title: "Mentorship",
+      text: "Connect to teaching assistants for guidance, feedback, and academic support.",
       backgroundUrl: "./src/assets/benefits/card-2.svg",
       iconUrl: benefitIcon2,
       imageUrl: benefitImage2,
-      light: true,
+      link:"https://fop-ta.com/",
     },
     {
       id: "2",
-      title: "Connect everywhere",
-      text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+      title: "Course Overview",
+      text: "A clear summary of what each lecture covers.",
       backgroundUrl: "./src/assets/benefits/card-3.svg",
       iconUrl: benefitIcon3,
       imageUrl: benefitImage2,
-    },
-    {
-      id: "3",
-      title: "Fast responding",
-      text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-      backgroundUrl: "./src/assets/benefits/card-4.svg",
-      iconUrl: benefitIcon4,
-      imageUrl: benefitImage2,
-      light: true,
-    },
-    {
-      id: "4",
-      title: "Ask anything",
-      text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-      backgroundUrl: "./src/assets/benefits/card-5.svg",
-      iconUrl: benefitIcon1,
-      imageUrl: benefitImage2,
-    },
-    {
-      id: "5",
-      title: "Improve everyday",
-      text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-      backgroundUrl: "./src/assets/benefits/card-6.svg",
-      iconUrl: benefitIcon2,
-      imageUrl: benefitImage2,
+            link:"/schedule",
+
     },
   ];
-  
+        {/*that 3 boxes that have some ... and linked to blog and schedule and TA*/}
+
+
+
+      {/*icons of the footer are here*/}
   export const socials = [
+
     {
       id: "0",
-      title: "Discord",
-      iconUrl: discordBlack,
-      url: "#",
-    },
-    {
-      id: "1",
-      title: "Twitter",
-      iconUrl: twitter,
-      url: "#",
-    },
-    {
-      id: "2",
-      title: "Instagram",
-      iconUrl: instagram,
-      url: "#",
-    },
-    {
-      id: "3",
       title: "Telegram",
       iconUrl: telegram,
-      url: "#",
+      url: "https://t.me/+P3IDOPhgfbs2Zjdk",
     },
-    {
-      id: "4",
-      title: "Facebook",
-      iconUrl: facebook,
-      url: "#",
-    },
-  ];
+
+  ];      
+  {/*icons of the footer are here*/}

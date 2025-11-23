@@ -3,6 +3,8 @@ import Section from "./Section";
 import { socials } from "../constants";
 import FooterSocialIcon from "./FooterSocialIcon"; 
 
+            {/*mother off all beings related to footer*/}
+
 const Footer = () => {
   return (
     <Section crosses className="!px-0 !py-10">

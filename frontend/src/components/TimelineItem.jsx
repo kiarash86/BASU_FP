@@ -1,4 +1,4 @@
-import React from 'react';
+              {/*comeback later to check this part*/}
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 
 const iconColors = {

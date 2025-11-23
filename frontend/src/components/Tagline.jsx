@@ -1,4 +1,5 @@
 import brackets from "../assets/svg/Brackets"
+              {/*positioning of items */}
 
 const Tagline = ({ className, children }) => {
     return (

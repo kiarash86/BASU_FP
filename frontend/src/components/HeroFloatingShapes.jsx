@@ -1,6 +1,7 @@
-import React from 'react';
 import { heroIcons } from "../constants"; 
 import { ScrollParallax } from "react-just-parallax";
+
+              {/*animation of moving balls in the background*/}
 
 const HeroFloatingShapes = ({ parallaxRef }) => {
   return (

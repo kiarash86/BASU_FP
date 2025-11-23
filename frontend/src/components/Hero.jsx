@@ -23,7 +23,7 @@ const Hero = () => {
                     </h1>
 
                     <p className="body-1 max-w-3xl py-5 mx-auto mb-6 text-n-2 lg:mb-8">A clear path to help you in fundamentals of programming course in Bu-Ali Sina University</p>
-                    <Button className="cursor-default" href="/#'" white>Fall 2025</Button>
+                    <Button className="cursor-default" href="/schedule" white>Fall 2025</Button>
                 </div>
             
                 <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">

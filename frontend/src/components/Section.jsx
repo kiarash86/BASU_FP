@@ -1,5 +1,7 @@
 import SectionSvg from "../assets/svg/SectionSvg";
 
+              {/*here we make a layout and a body for every section and part*/}
+
 const Section = ({
   className = "",
   id,

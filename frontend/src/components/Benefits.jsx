@@ -4,6 +4,11 @@ import Section from "./Section";
 import { BottomLine } from "./design/Hero";
 import BenefitCard from "./BenefitCard"; 
 
+
+{/*mother of all beings that related to benefits*/}
+
+
+
 const Benefits = () => {
   return (
     <Section id="features">

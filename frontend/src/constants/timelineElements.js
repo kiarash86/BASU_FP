@@ -43,6 +43,10 @@ import {
   yourlogo,
 } from "../assets";
 
+/*timeline Elements are being created here*/
+
+
+
 const timelineElements = [
   {
     id: 1,
@@ -121,28 +125,7 @@ const timelineElements = [
     iconSrc: file02,
     icon: "project",
   },
-  {
-    id: 8,
-    title: "Socket I/O Workshop",
-    location: "Bu-Ali Sina University",
-    description:
-      "Learn network programming basics, TCP/UDP sockets, and client-server communication.",
-    buttonText: "Workshop Materials",
-    date: "Week 13",
-    iconSrc: network,
-    icon: "school",
-  },
-  {
-    id: 9,
-    title: "GUI & FTXUI Workshop",
-    location: "Bu-Ali Sina University",
-    description:
-      "Hands-on GUI programming using FTXUI library for terminal-based interfaces.",
-    buttonText: "Workshop Guide",
-    date: "Week 14",
-    iconSrc: file02,
-    icon: "school",
-  },
+
 ];
 
 export default timelineElements;

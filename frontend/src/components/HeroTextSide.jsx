@@ -1,5 +1,5 @@
-import React from 'react';
 import { ScrollParallax } from "react-just-parallax";
+              {/*the text that moves with scrolling the main page*/}
 
 const HeroTextSide = ({ parallaxRef }) => {
   return (

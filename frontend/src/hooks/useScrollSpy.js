@@ -20,7 +20,8 @@ const useScrollSpy = (sectionUrls = [], offset = 80) => {
       threshold: 0.1,
     };
 
-  
+          /*this tell us where is the user, so we can use that to make some little animation and...etc*/
+
 
   
   

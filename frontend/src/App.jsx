@@ -1,26 +1,16 @@
-import ButtonGradient from "./assets/svg/ButtonGradient"
-import Header from "./components/Header"
-import Hero from "./components/Hero" 
-import Benefits from "./components/Benefits";
-import CourseTimeline from "./components/CourseTimeline" 
-import RoadmapEmbed from "./components/Roadmap"
-import Footer from "./components/Footer";
-
+import { Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/landingPage";
+import SchedulePage from "./pages/SchedulePage";
+import BlogPage from "./pages/BlogPage";
 function App() {
   return (
-    <>
-      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-        <Header />
-        <Hero />
-        <Benefits />
-        <CourseTimeline />
-        <RoadmapEmbed />
-        <Footer />
-      </div>
-    
-      <ButtonGradient />
-    </>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/schedule" element={<SchedulePage />} />
+      <Route path="/blog" element={<BlogPage />} />
+
+    </Routes>
   );
 }
-
-export default App
+export default App;
+//Giving Routing Pages

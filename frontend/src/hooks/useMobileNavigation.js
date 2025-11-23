@@ -29,3 +29,5 @@ const useMobileNavigation = () => {
 };
 
 export default useMobileNavigation;
+
+        /*name of the this hook tells everything about this*/

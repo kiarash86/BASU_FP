@@ -4,6 +4,9 @@ import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import TimelineItem from "./TimelineItem"; 
 
+            {/*mother of all beings that related to timeline*/}
+
+
 function CourseTimeline() {
   return (
     <Section id="timeline"  crossesOffset="lg:translate-y-[5.25rem]" customPadding="py-20">

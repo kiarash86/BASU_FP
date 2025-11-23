@@ -1,5 +1,6 @@
 import React from 'react';
 import TagLine from "./Tagline";
+              {/*head of everything*/}
 
 const Heading = ({ className, title, text, tag }) => {
   return (
