@@ -1,19 +1,21 @@
 import { useEffect, useState } from "react";
 
-const useScrollSpy = (sectionUrls = [], offset = 80) => {
+  const useScrollSpy = (sectionUrls = [], offset = 80) => {
   const [activeId, setActiveId] = useState("");
 
   useEffect(() => {
-    const targetIds = sectionUrls
-      .filter(Boolean)
-      .map((url) => url.replace("#", ""));
 
-    const sections = targetIds
-      .map((id) => document.getElementById(id))
-      .filter(Boolean);
 
+    const targetIds = sectionUrls.filter(Boolean).map((url) => url.replace("#", ""));
+
+    const sections = targetIds.map((id) => document.getElementById(id)).filter(Boolean);
+
+  
+  
     if (sections.length === 0) return;
+   
 
+   
     const observerOptions = {
       root: null,
       rootMargin: `-${offset}px 0px -50% 0px`,
@@ -21,27 +23,11 @@ const useScrollSpy = (sectionUrls = [], offset = 80) => {
     };
 
           /*this tell us where is the user, so we can use that to make some little animation and...etc*/
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
     const observer = new IntersectionObserver((entries) => {
    if (window.scrollY <= offset) {
         if (activeId !== "") setActiveId("");
         return;
       }
-
-
 
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -59,5 +45,6 @@ const useScrollSpy = (sectionUrls = [], offset = 80) => {
 
   return activeId;
 };
+
 
 export default useScrollSpy;
