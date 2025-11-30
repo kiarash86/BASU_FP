@@ -33,29 +33,35 @@ const ScheduleTable = () => {
               <td className="px-4 py-3 align-top border-b border-n-6/40 whitespace-nowrap">
                 {row.date}
               </td>
+         
               <td className="px-4 py-3 align-top border-b border-n-6/40">
-                {row.lectureNumber ?? ""}
+                {row.lecturenumber ?? ""}
               </td>
+              
+         
               <td className="px-4 py-3 align-top border-b border-n-6/40">
                 {row.lectureTitle}
               </td>
               <td className="px-4 py-3 align-top border-b border-n-6/40">
+           <a target="_blank" href="#">
                 {row.readings}
                 {row.discussion && (
                   <div className="text-n-3 text-xs mt-1">
                     Discussion: {row.discussion}
                   </div>
-                )}
+         
+                )} 
+                  </a>
               </td>
               <td className="px-4 py-3 align-top border-b border-n-6/40">
-                {row.homework}
+             <a target="_blank" href={row.urlhomework}>   {row.homework}</a> 
               </td>
               <td className="px-4 py-3 align-top border-b border-n-6/40">
-                {row.project}
-              </td>
+            <a target="_blank" href={row.urlproject}>   {row.project}</a> 
+               </td>
               <td className="px-4 py-3 align-top border-b border-n-6/40">
-                {row.event}
-              </td>
+               {row.event}   
+            </td>
             </tr>
           ))}
         </tbody>

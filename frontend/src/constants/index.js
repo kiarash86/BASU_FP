@@ -270,12 +270,12 @@ import {
     },
     {
       id: "1",
-      title: "Mentorship",
-      text: "Connect to teaching assistants for guidance, feedback, and academic support.",
+      title: "Resources",
+      text: "you can find every resouces you need in here",
       backgroundUrl: "./src/assets/benefits/card-2.svg",
       iconUrl: benefitIcon2,
       imageUrl: benefitImage2,
-      link:"https://fop-ta.com/",
+      link:"/resources",
     },
     {
       id: "2",
