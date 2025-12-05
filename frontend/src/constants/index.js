@@ -1,118 +1,112 @@
-      /*توانایی تمیز شدن دارد*/
-      /*مورد برای بررسی شدن دارد*/
-              /*اشکال دارد*/
-
-
-
+/*توانایی تمیز شدن دارد*/
+/*مورد برای بررسی شدن دارد*/
+/*اشکال دارد*/
 
 import {
-    benefitIcon1,
-    benefitIcon2,
-    benefitIcon3,
-    benefitImage2,
-    chromecast,
-    disc02,
-    discord,
-    figma,
-    hacker,
-    shell,
-    git,
-    bug,
-    framer,
-    notification2,
-    notification3,
-    notification4,
-    notion,
-    photoshop,
-    protopie,
-    raindrop,
-    recording01,
-    recording03,
-    roadmap1,
-    roadmap2,
-    roadmap3,
-    roadmap4,
-    slack,
-    sliders04,
-    telegram,
-    yourlogo,
-  } from "../assets";
-  
+  benefitIcon1,
+  benefitIcon2,
+  benefitIcon3,
+  benefitImage2,
+  chromecast,
+  disc02,
+  discord,
+  figma,
+  hacker,
+  shell,
+  git,
+  bug,
+  framer,
+  notification2,
+  notification3,
+  notification4,
+  notion,
+  photoshop,
+  protopie,
+  raindrop,
+  recording01,
+  recording03,
+  roadmap1,
+  roadmap2,
+  roadmap3,
+  roadmap4,
+  slack,
+  sliders04,
+  telegram,
+  yourlogo,
+} from "../assets";
 
+{
+  /*menu items are here*/
+}
 
+export const navigation = [
+  {
+    id: "0",
+    title: "Features",
+    url: "#features",
+  },
+  {
+    id: "1",
+    title: "Timeline",
+    url: "#timeline",
+  },
+  {
+    id: "2",
+    title: "Blog ",
+    url: "blog",
+  },
+  {
+    id: "3",
+    title: "Roadmap",
+    url: "#roadmap",
+  },
+  {
+    id: "4",
+    title: "Quera",
+    url: "https://quera.org/course/23701",
+    onlyMobile: true,
+  },
+  {
+    id: "5",
+    title: "Course Ware",
+    url: "#https://cw1.basu.ac.ir/",
+    onlyMobile: true,
+  },
+];
+{
+  /*menu items are here*/
+}
 
-        {/*menu items are here*/}
+{
+  /*idk*/
+}
 
-  export const navigation = [
-    {
-      id: "0",
-      title: "Features",
-      url: "#features",
-    },
-    {
-      id: "1",
-      title: "Timeline",
-      url: "#timeline",
-    },
-    {
-      id: "2",
-      title: "Blog ",
-      url: "blog",
-    },
-    {
-      id: "3",
-      title: "Roadmap",
-      url: "#roadmap",
-    },
-    {
-      id: "4",
-      title: "Quera",
-      url: "#Quera",
-      onlyMobile: true,
-    },
-    {
-      id: "5",
-      title: "Course Ware",
-      url: "#cw",
-      onlyMobile: true,
-    },
-  ];
-          {/*menu items are here*/}
+export const heroIcons = [hacker, bug, git, shell];
 
+export const notificationImages = [notification4, notification3, notification2];
 
+export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
-          
+export const brainwaveServices = [
+  "Photo generating",
+  "Photo enhance",
+  "Seamless Integration",
+];
 
+export const brainwaveServicesIcons = [
+  recording03,
+  recording01,
+  disc02,
+  chromecast,
+  sliders04,
+];
+{
+  /*idk*/
+}
 
-        {/*idk*/}
-
-  export const heroIcons = [hacker, bug, git, shell];
-  
-  export const notificationImages = [notification4, notification3, notification2];
-  
-  export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
-  
-  export const brainwaveServices = [
-    "Photo generating",
-    "Photo enhance",
-    "Seamless Integration",
-  ];
-
-  export const brainwaveServicesIcons = [
-    recording03,
-    recording01,
-    disc02,
-    chromecast,
-    sliders04,
-  ];
-          {/*idk*/}
-
-
-
-
-
-
-        {/*no use at this moment*/}
+{
+  /*no use at this moment*/
+}
 /*
   export const roadmap = [
     {
@@ -149,14 +143,13 @@ import {
       imageUrl: roadmap4,
     },
   ];*/
-        {/*no use at this moment*/}
+{
+  /*no use at this moment*/
+}
 
-
-
-
-
-
-        {/*no use at this moment*/}
+{
+  /*no use at this moment*/
+}
 /*
   export const collabText =
     "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
@@ -176,15 +169,15 @@ import {
       title: "Top-notch Security",
     },
   ];*/
-        {/*no use at this moment*/}
+{
+  /*no use at this moment*/
+}
 
+{
+  /*no use at this moment*/
+}
 
-
-
-
-      {/*no use at this moment*/}
-
-  /*
+/*
   export const collabApps = [
     {
       id: "0",
@@ -244,63 +237,62 @@ import {
     },
   ];
   */
-      {/*no use at this moment*/}
+{
+  /*no use at this moment*/
+}
 
+{
+  /*that 3 boxes that have some ... and linked to blog and schedule and TA*/
+}
 
+{
+  /*اشکال دارد*/
+}
 
+export const benefits = [
+  {
+    id: "0",
+    title: "FoP Blog",
+    text: "Shares insights, tutorials, and the latest updates to keep you informed and inspired.",
+    backgroundUrl: "./src/assets/benefits/card-1.svg",
+    iconUrl: benefitIcon1,
+    imageUrl: benefitImage2,
+    link: "/blog",
+  },
+  {
+    id: "1",
+    title: "Resources",
+    text: "you can find every resouces you need in here",
+    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    iconUrl: benefitIcon2,
+    imageUrl: benefitImage2,
+    link: "/resources",
+  },
+  {
+    id: "2",
+    title: "Course Overview",
+    text: "A clear summary of what each lecture covers.",
+    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    iconUrl: benefitIcon3,
+    imageUrl: benefitImage2,
+    link: "/schedule",
+  },
+];
+{
+  /*that 3 boxes that have some ... and linked to blog and schedule and TA*/
+}
 
-      {/*that 3 boxes that have some ... and linked to blog and schedule and TA*/}
-
-
-
-
-              {/*اشکال دارد*/}
-
-  export const benefits = [
-    {
-      id: "0",
-      title: "FoP Blog",
-      text: "Shares insights, tutorials, and the latest updates to keep you informed and inspired.",
-      backgroundUrl: "./src/assets/benefits/card-1.svg",
-      iconUrl: benefitIcon1,
-      imageUrl: benefitImage2,
-            link:"/blog",
-
-      
-    },
-    {
-      id: "1",
-      title: "Resources",
-      text: "you can find every resouces you need in here",
-      backgroundUrl: "./src/assets/benefits/card-2.svg",
-      iconUrl: benefitIcon2,
-      imageUrl: benefitImage2,
-      link:"/resources",
-    },
-    {
-      id: "2",
-      title: "Course Overview",
-      text: "A clear summary of what each lecture covers.",
-      backgroundUrl: "./src/assets/benefits/card-3.svg",
-      iconUrl: benefitIcon3,
-      imageUrl: benefitImage2,
-            link:"/schedule",
-
-    },
-  ];
-        {/*that 3 boxes that have some ... and linked to blog and schedule and TA*/}
-
-
-
-      {/*icons of the footer are here*/}
-  export const socials = [
-
-    {
-      id: "0",
-      title: "Telegram",
-      iconUrl: telegram,
-      url: "https://t.me/+P3IDOPhgfbs2Zjdk",
-    },
-
-  ];      
-  {/*icons of the footer are here*/}
+{
+  /*icons of the footer are here*/
+}
+export const socials = [
+  {
+    id: "0",
+    title: "Telegram",
+    iconUrl: telegram,
+    url: "https://t.me/+P3IDOPhgfbs2Zjdk",
+  },
+];
+{
+  /*icons of the footer are here*/
+}
