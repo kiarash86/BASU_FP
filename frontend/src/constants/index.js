@@ -69,7 +69,7 @@ export const navigation = [
   {
     id: "5",
     title: "Course Ware",
-    url: "#https://cw1.basu.ac.ir/",
+    url: "https://cw1.basu.ac.ir/",
     onlyMobile: true,
   },
 ];
